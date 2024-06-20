@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarion Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+        <h1>Registration Form</h1>
+        <div>
+            <form name="form">
+                <div class="input">
+                    <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your Fitst Name"><br>
+                <span class="error" id="fname_error" ></span>
+                <p></p>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your Last Name"  ><br>
+                <span class="error" id="lname_error"></span>
+                </div>
+                
+                <div >
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                </div>
+                <span class="error" id="email_error"></span>
+                <p></p>
+                
+                <div class="input-text">
+                    <label for="contact">Mobile No:</label>
+                    <input type="number" name="contact" id="contact" placeholder="Enter your mobile" maxlength="10" minlength="10" >
+                </div>
+                <span class="error" id="contact_error"></span>
+                <p></p>
+                
+                <div>
+                    <label for="adrs">Address:</label>
+                    <input type="text" name="adrs" id="adrs" placeholder="Enter your address">
+                </div>
+                <span class="error" id="address_error"></span>
+                <p></p>
+              
+                <div >
+                    <label style="font-weight: bold;">Gender:</label><br>
+                    <div class="options" style="display: flex;font-size: small;">
+                        <label for="male">
+                            Male <input type="radio" name="gender"  id="male" value="Male"> 
+                        </label>
+                        <label for="female">
+                            Female <input type="radio" name="gender" id="female" value="Female" > 
+                        </label>
+                        <label for="others">
+                            Others <input type="radio" name="gender" id="others" value="Others" > 
+                        </label>
+                    </div>
+                    <span class="error" id="gender_error"></span>
+                </div>
+                <div >
+                    <label style="font-weight: bold;">Language:</label><br>
+                    <div class="options" style="font-weight: lighter; font-size: small;">
+                        <label for="beng"> Bengali
+                            <input type="checkbox" name="chk-lang" id="beng" value="Bengali" >
+                        </label>
+                        <label for="eng">
+                            English
+                            <input type="checkbox" name="chk-lang" id="eng" value="English" >
+                        </label>
+                        <label for="hindi">
+                            Hindi
+                            <input type="checkbox" name="chk-lang" id="hindi" value="Hindi" >
+                        </label>
+                    </div>
+                   <span class="error" id="lang_error" ></span>
+    
+                </div>
+                <div >
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" >
+                    <span class="error" id="dob_error"></span>
+                </div>
+                <div class="submit" style="display: flex;justify-content: center;">
+                <button type="submit" onclick="handleSubmit(event)" class="btn" id="login-btn">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+
+       
+    </div>
+    </div>
+ <!-- output -->
+
+<script src="script.js" type="text/javascript"></script>
+<div class="container2">
+    <label for="fname">First Name:</label>
+    <span class="output" id="fname_output" ></span><br>
+
+    <label for="lname">Last Name:</label>
+    <span class="output" id="lname_output"></span><br>
+
+    <label for="email">Email:</label> 
+    <span class="output" id="email_output"></span><br>
+
+    <div class="input-text">
+    <label for="contact">Mobile No:</label>
+    <span class="output" id="contact_output"></span><br>
+
+    <label for="adrs">Address:</label>
+    <span class="output" id="address_output"></span><br>
+
+        
+    <label style="font-weight: bold;">Gender:</label>
+    <span class="output" id="gender_output"></span><br>
+
+        
+    <label style="font-weight: bold;">Language:</label>
+    <span class="output" id="lang_output"></span><br>
+
+    <label for="dob">Date of Birth:</label>
+    <span class="output" id="dob_output"></span><br>
+</div>
+</div>
+</body>
+</html>
+<!-- onclick="handleSubmit(event) -->
